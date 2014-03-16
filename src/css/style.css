@@ -1,0 +1,103 @@
+/* Text meant only for screen readers */
+.screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; }
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus { background-color: #f1f1f1; border-radius: 3px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-weight: bold; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar */ }
+
+/* Fix for the admin bar on mobile */
+@media screen and (max-width: 782px) { #wpadminbar { position: fixed; } }
+/* ========================================================================== Clearings ========================================================================== */
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after { content: ''; display: table; }
+
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after { clear: both; }
+
+/* ========================================================================== Content ========================================================================== */
+.hentry { margin: 0 0 1.5em; }
+
+.byline, .updated { display: none; }
+
+.single .byline, .group-blog .byline { display: inline; }
+
+.page-content, .entry-content, .entry-summary { margin: 1.5em 0 0; }
+
+.page-links { clear: both; margin: 0 0 1.5em; }
+
+.blog .format-aside .entry-title, .archive .format-aside .entry-title { display: none; }
+
+/* ========================================================================== Alignment ========================================================================== */
+.alignleft { float: left; }
+
+.alignright { float: right; }
+
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+blockquote.alignleft, img.alignleft { margin: 0.4375rem 1.5rem 0.4375rem 0; }
+
+.wp-caption.alignleft { margin: 0.4375rem 0.875rem 0.4375rem 0; }
+
+blockquote.alignright, img.alignright { margin: 0.4375rem 0 0.4375rem 1.5rem; }
+
+.wp-caption.alignright { margin: 0.4375rem 0 0.4375rem 0.875rem; }
+
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 0.4375rem; margin-bottom: 0.4375rem; }
+
+.site-content blockquote.alignleft, .site-content blockquote.alignright { border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-top: 1.0625rem; width: 50%; }
+.site-content blockquote.alignleft p, .site-content blockquote.alignright p { margin-bottom: 1.0625rem; }
+
+.wp-caption { margin-bottom: 1.5rem; color: #767676; }
+.wp-caption img[class*="wp-image-"] { display: block; margin: 0; }
+
+.wp-caption-text { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 0.75rem; font-style: italic; line-height: 1.5; margin: 0.5625rem 0; padding-right: 0.625rem; }
+
+.wp-smiley { border: 0; margin-bottom: 0; margin-top: 0; padding: 0; }
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */ display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer { display: block; }
+
+/* ========================================================================== Media ========================================================================== */
+.page-content img.wp-smiley, .entry-content img.wp-smiley, .comment-content img.wp-smiley { border: none; margin-bottom: 0; margin-top: 0; padding: 0; }
+
+.wp-caption { border: 1px solid #ccc; margin-bottom: 1.5em; max-width: 100%; }
+.wp-caption img[class*="wp-image-"] { display: block; margin: 1.2% auto 0; max-width: 98%; }
+
+.wp-caption-text { text-align: center; }
+
+.wp-caption .wp-caption-text { margin: 0.8075em 0; }
+
+.site-main .gallery { margin-bottom: 1.5em; }
+
+.site-main .gallery a img { border: none; height: auto; max-width: 90%; }
+.site-main .gallery dd, .site-main .gallery figcaption { margin: 0; }
+
+/* Make sure embeds and iframes fit their containers */
+embed, iframe, object { max-width: 100%; }
+
+/* ========================================================================== Navigation ========================================================================== */
+.site-main [class*="navigation"] { margin: 0 0 1.5625rem; *zoom: 1; }
+.site-main [class*="navigation"]:before, .site-main [class*="navigation"]:after { content: " "; display: table; }
+.site-main [class*="navigation"]:after { clear: both; }
+
+[class*="navigation"] .nav-previous { float: left; width: 50%; }
+[class*="navigation"] .nav-next { float: right; text-align: right; width: 50%; }
+
+/* ========================================================================== Widgets ========================================================================== */
+.widget { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin-bottom: 1.875rem; word-wrap: break-word; }
+.widget ul, .widget ol { list-style-type: none; margin: 0; padding: 0; }
+.widget li { padding: 5px 0; }
+.widget .children li:last-child { padding-bottom: 0; }
+.widget li > ul, .widget li > ol { margin-left: 1.25rem; }
+.widget select { max-width: 100%; }
+.widget .search-field { margin-bottom: 0; }
+
+/* Search widget */
+.search-form .search-submit { display: none; }
+
+/* ========================================================================== Header ========================================================================== */
+.site-header { margin-bottom: 1.875rem; }
+
+/* ========================================================================== Navigation ========================================================================== */
+/* ========================================================================== Content ========================================================================== */
+/* ========================================================================== Sidebar ========================================================================== */
+/* ========================================================================== Footer ========================================================================== */
+.site-footer { background: #e7e7e7; padding: 5rem 0; }
